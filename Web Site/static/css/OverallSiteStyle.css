@@ -1,11 +1,13 @@
 body{
-	background-color: #007143;
+	background-color: #E6E6DC;
 }
 h3{
 	font-size: 36px;
-	color: white;
+	color: #00628B;
 }
-h1{
-	font-size: 72px;
-	color: white;
+.navbar{
+	background-color: #81A594;
+}
+.nav-text{
+	color: #00628B;
 }
