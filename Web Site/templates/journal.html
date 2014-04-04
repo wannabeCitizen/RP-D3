@@ -102,6 +102,52 @@
 			</div>
 		</div>
 
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Challenge 3: Flask + SQLAlchemy</h3>
+				<p>
+					Read the section “A Minimal Application” and run the example code in a Python shell
+				</br>
+				<a href="http://pythonhosted.org/Flask-SQLAlchemy/quickstart.html#a-minimal-application">http://pythonhosted.org/Flask-SQLAlchemy/quickstart.html#a-minimal-application</a>
+			</p>
+
+				Hint: You will need to run these commands to install necessary packages.
+				$ . venv/bin/activate
+				$ pip install sqlalchemy
+				$ pip install Flask-SQLAlchemy
+
+				<p>
+					Add one more user (yourself) to the User table.
+				</br>
+				<img src="{{ url_for('static', filename='img/journal1.jpg') }}" alt text="Journal 1" rel="tooltip" data-placement="bottom" title="Hackathon 1">
+				</p>
+
+				<p>
+					The string representation of a user object is not all that helpful. Modify the __repr__ method of the class User.  The goal is to be able to see both attributes of each user object like below. Also, no more <>’s (so later it can be displayed properly in a browser).
+
+				</br>
+				<img src="{{ url_for('static', filename='img/journal2.jpg') }}" alt text="Journal 1" rel="tooltip" data-placement="bottom" title="Hackathon 1">
+				</p>
+
+				<p>
+					Submission 3-a: Type the query like above in a Python interactive shell to show that there are three users (including yourself) and that they are displayed in the shell in the improved format. Take a screenshot of your terminal window and upload the screenshot to your journal.
+				</p>
+
+				<p>
+					Now, modify your server code to respond to /users and display the result of User.query.all() as a string. (Hint: use <a href="https://docs.python.org/2/library/functions.html#str">str()</a>)
+
+				</br>
+				<img src="{{ url_for('static', filename='img/journal3.jpg') }}" alt text="Journal 1" rel="tooltip" data-placement="bottom" title="Hackathon 1">
+				</p>
+
+
+				<p>
+					Submission 3-b: Open your browser to /users and the output should be like above. Take a screenshot and upload it to your journal.
+				</p>
+			</div>
+		</div>
+
 		
 	</div> <!-- container -->
 
