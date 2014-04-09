@@ -4,6 +4,17 @@ body{
 h3{
 	font-size: 36px;
 	color: #00628B;
+
+}
+h2{
+	margin-bottom: 15px;
+	font-size: 40px;
+	font-family: sans-serif;
+}
+
+p{
+	font-size: 15px;
+	font-family: Georgia, serif;
 }
 .navbar{
 	background-color: #81A594;
