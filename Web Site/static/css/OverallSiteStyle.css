@@ -31,3 +31,7 @@ img{
 .nav-text{
 	color: #00628B;
 }
+
+.navigation {
+	position:fixed;
+}

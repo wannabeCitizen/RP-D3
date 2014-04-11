@@ -26,12 +26,10 @@
 </head>
 <body>
 
-
+<!--
 	<div class="container">
-		<!--nav bar-->
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -41,8 +39,6 @@
 					</button>
 					<a class="navbar-brand" href="/"><div class="nav-text">Dynamic Classroom</div></a>
 				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
@@ -54,50 +50,67 @@
 						<li class='active'><a href="#"><div class="nav-text">About Us</div></a></li>
 
 					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-
-	<!-- Tom Yeh-->
-			<div class="row">
-				<div class="col-lg-10">
-					<h3>Tom Yeh</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-2 col-md-2">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
+		</nav>-->
+		<div class="row">
+			<div class="col-xs-2 left">
+
+				<div class="navigation">	
+
+					<ul class="">
+						<li><a href="/"><div class="nav-text">Dynamic Classroom</div></a></li>
+						<li><a href="/"><div class="nav-text">Home</div></a></li>
+						<li><a href="hackathon"><div class="nav-text">Hackathon</div></a></li>
+						<li><a href="journal"><div class="nav-text">Journals</div></a></li>
+						<li><a href="results"><div class="nav-text">Results</div></a></li>
+						<li class='active'><a href="#"><div class="nav-text">About Us</div></a></li>
+
+					</ul>
 				</div>
-				<div class="col-lg-8 col-md-8">
-					<p>
-						I am an assistant professor in the Department of Computer Science at the University of Colorado Boulder. I lead the Sikuli Lab where I educate a team of talented students to conduct cutting-edge research to make computers see better and interact with humans more naturally. One example is Sikuli Script, a GUI automation tool based on screenshots. Since its release as open-source software in 2010, it has been downloaded more than 200,000 times and used by a large community of users for a variety of purposes such as testing, IT automation, scraping, data transfer, and gaming.
-					</p>
+			</div> <!-- /col-md-2 navigation -->
+
+			<div class="col-xs-8 col-md-10 content">
+				<!-- Tom Yeh-->
+				<div class="row">
+					<div class="col-lg-10">
+						<h3>Tom Yeh</h3>
+					</div>
 				</div>
-			</div>
-
-	<!-- Mike-->
-
-			<div class="row">
-				<div class="col-lg-10">
-					<h3>Mike Skirpane</h3>
+				<div class="row">
+					<div class="col-lg-2 col-md-2">
+						<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
+					</div>
+					<div class="col-lg-8 col-md-8">
+						<p>
+							I am an assistant professor in the Department of Computer Science at the University of Colorado Boulder. I lead the Sikuli Lab where I educate a team of talented students to conduct cutting-edge research to make computers see better and interact with humans more naturally. One example is Sikuli Script, a GUI automation tool based on screenshots. Since its release as open-source software in 2010, it has been downloaded more than 200,000 times and used by a large community of users for a variety of purposes such as testing, IT automation, scraping, data transfer, and gaming.
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-2 col-md-2">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/Hansoloprofile.jpg') }}">
+
+				<!-- Mike-->
+
+				<div class="row">
+					<div class="col-lg-10">
+						<h3>Mike Skirpane</h3>
+					</div>
 				</div>
-				<div class="col-lg-8 col-md-8">
-					<p>
-						Han Solo is a character in the original trilogy of the Star Wars universe. He is portrayed by Harrison Ford. He and his co-pilot, Chewbacca, become involved in the Rebel Alliance against the Galactic Empire. Over the course of the Star Wars franchise, he becomes a chief figure in the Alliance and succeeding galactic governments. Star Wars creator George Lucas described the character as "a loner who realizes the importance of being part of a group and helping for the common good".
-					</p>
+				<div class="row">
+					<div class="col-lg-2 col-md-2">
+						<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/Hansoloprofile.jpg') }}">
+					</div>
+					<div class="col-lg-8 col-md-8">
+						<p>
+							Han Solo is a character in the original trilogy of the Star Wars universe. He is portrayed by Harrison Ford. He and his co-pilot, Chewbacca, become involved in the Rebel Alliance against the Galactic Empire. Over the course of the Star Wars franchise, he becomes a chief figure in the Alliance and succeeding galactic governments. Star Wars creator George Lucas described the character as "a loner who realizes the importance of being part of a group and helping for the common good".
+						</p>
+					</div>
 				</div>
-			</div>
 
 
 
-	</div> <!-- container -->
+			</div> <!-- container -->
+		</div>
 
-	
-</body>
+	</body>
 
-</html>
+	</html>
