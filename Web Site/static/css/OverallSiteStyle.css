@@ -1,11 +1,13 @@
 body{
 	background-color: #E6E6DC;
 }
+
 h3{
 	font-size: 36px;
 	color: #00628B;
 
 }
+
 h2{
 	margin-bottom: 15px;
 	font-size: 40px;
@@ -16,9 +18,16 @@ p{
 	font-size: 15px;
 	font-family: Georgia, serif;
 }
+
+img{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 .navbar{
 	background-color: #81A594;
 }
+
 .nav-text{
 	color: #00628B;
 }
