@@ -24,14 +24,18 @@ img{
 	margin-top: 20px;
 }
 
-.navbar{
-	background-color: #81A594;
-}
-
-.nav-text{
-	color: #00628B;
+.nav_list {
+	list-style-type: none;
 }
 
 .navigation {
+	margin-top: 6%;
+	margin-left: 5%;
 	position:fixed;
+	color: #00628B;
+	font-size: 20px;
+}
+
+#left_column{
+	border-right: 2px;
 }
