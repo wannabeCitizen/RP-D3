@@ -39,3 +39,8 @@ img{
 #selected_page{
 	color:Black;
 }
+
+.content {
+	border-left: 3px;
+	background-color: beige;
+}
