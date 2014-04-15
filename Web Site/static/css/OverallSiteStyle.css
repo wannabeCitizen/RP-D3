@@ -43,4 +43,6 @@ img{
 .content {
 	border-left: 3px;
 	background-color: beige;
+	border-left-style: solid;
+	border-right-style: solid;
 }
