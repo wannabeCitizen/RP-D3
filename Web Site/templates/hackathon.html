@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,10 +55,41 @@
 				<div class="row">
 					<div class="col-md-10">
 						<h2>Week 6 Example: Flask/SQLAlchemy Hackathon</h2>
-						<h4><ul>Task</ul></h4>
+                        <ul><h4>Task</h4></ul>
 						<p>
 							Develop a web server for an “Exotic Pet Breeding” site. Tailor your site to a particular exotic species. Be creative and imaginative in which species your team choose to support.
 						</p>
+                       
+                           <h4> Server-side Database Specification</h4>
+                        <p>
+                            Unlike in the last week hackathon where the database functionality is fake, this week’s hackathon requires your team to connect your Flask server to a real database. The database should meet the minimum requirements below:
+                            It should have one table storing data about pets.
+                            The table should have at least 3 columns. One of the columns should be name. The other two should be based on your team’s imagination.
+                            The table should have at least 10 rows (i.e., 10 pets).
+                            Submission: After these requirements are met, take a screenshot of the content of the table as seen in a GUI viewer (e.g., SQL Manager)
+                        </p>
+                        <br><br>
+                        <p>
+                            Server-side API Specifications
+                            The web server should provide two services: Search and View.
+                            1. Search:
+                            Its location is http://localhost:5000/search
+                            A usage example is: http://localhost:5000/search?n=1&type=metal
+                            It returns an HTML page showing a list of results.
+                            It can take a take at least a combination of TWO arguments as search criteria. For examples:
+                            http://localhost:5000/search would return all results
+                            http://localhost:5000/search?color=red would return all red pets.
+                            http://localhost:5000/search?color=red&trait=aggresive would return all red pets who are aggressive.
+
+                        </p>
+                        <br><br>
+                        <p>
+                            2. View:
+                            Its location is http://localhost:5000/view
+                            A usage example is http://localhost:5000/view/ben
+                            It returns an HTML page about a pet by a particular name (e.g., ben).
+
+                        </p>
 					</div>
 				</div>
 			</div>
