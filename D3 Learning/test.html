@@ -68,7 +68,7 @@ d3.tsv("data.tsv", function(error, data) {
     d.date = parseDate(d.date);
   });
 
-  var cities = color.domain().map(function(name) {
+  var students = color.domain().map(function(name) {
     return {
       name: name,
       values: data.map(function(d) {
@@ -80,8 +80,8 @@ d3.tsv("data.tsv", function(error, data) {
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
-    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
-    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+    d3.min(students, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+    d3.max(students, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
   ]);
 
   svg.append("g")
@@ -99,17 +99,17 @@ d3.tsv("data.tsv", function(error, data) {
       .style("text-anchor", "end")
       .text("# of Edits");
 
-  var city = svg.selectAll(".city")
-      .data(cities)
+  var student = svg.selectAll(".student")
+      .data(students)
     .enter().append("g")
-      .attr("class", "city");
+      .attr("class", "student");
 
-  city.append("path")
+  student.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
       .style("stroke", function(d) { return color(d.name); });
 
-  city.append("text")
+  student.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
       .attr("x", 3)

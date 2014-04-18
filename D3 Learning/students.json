@@ -1,0 +1,78 @@
+[
+{"name": "Alexander Ackerman",
+"challenge" : "8",
+"long" : "10",
+"struggle" : "I got very hung up with using the python shell.  Nothing seemed to work and I kept getting strange errors that I couldn’t account for. I also really struggled with the ajax stuff...it would not load after i hit the submit button"
+},
+{"name": "Andrew Howe",
+"challenge" : "3",
+"long" : "3",
+"struggle" : "Just took a bit to figure out the correct package for SQLAlchemy ( apparently it has changed since the documentation was written)"
+},
+{
+"name": "Andrey Shprengel",
+"challenge" : "5",
+"long" : "4",
+"struggle" : "i didnt save the file as table_def.py and wasnt sure why it wasnt working at first. the project learning aspect was very difficult"
+},
+{
+"name": "Austin Longo",
+"challenge" : "6",
+"long" : "2.5",
+"struggle" : "I got hung up on the project (5 of 6). It was very open ended this time around and I struggled to understand where to even begin and what to be striving for."
+},
+{
+"name": "Cliff Min",
+"challenge" : "8",
+"long" : "3",
+"struggle" : "The part with the minimal application, it was difficult to understand that I needed to import the file without the extension. Also with the ajax request, to $.post without a proper server handler is an unsuccessful ajax request it feels like. "
+},
+{
+"name": "Dan Morrissey",
+"challenge" : "7",
+"long" : "6",
+"struggle" : "flask + jquery + ajax is troublesome, because you can’t statically link to the other files in jquery easily, and the url_for method doesn’t work for it."
+},
+{
+"name": "Lisa Hobbs",
+"challenge" : "7.34",
+"long" : "5.5",
+"struggle" : "N/A"
+},
+{
+"name": "Jacob Wolniewics",
+"challenge" : "9",
+"long" : "5.75",
+"struggle" : "Yeah, challenge 3 and on wards wasn’t working on windows, even with an hour spent on google with these odd errors. So I did it with my partner on his computer. Also got really confused on what you wanted with the ajax. I fealt you wanted it tied into the challenge, but I couldn’t figure out how to make the flask server not throw a 405 to AJAX POST requests."
+},
+{
+"name": "James Ontiveros",
+"challenge" : "7",
+"long" : "3",
+"struggle" : "I got very hung up on the project. It was very vague and dificult to figure out"
+},
+{
+"name": "Mark Ariniello",
+"challenge" : "9",
+"long" : "4",
+"struggle" : "passing variables from flask to the template, and rendering the template.  Getting the loop to access correctly (9 instead of 3 links)"
+},
+{
+"name": "Matt Gross",
+"challenge" : "9",
+"long" : "8",
+"struggle" : "I died on the AJAX write to the db because of a dumb mistake that I solved by asking SO."
+},
+{
+"name": "Michael Williams",
+"challenge" : "8",
+"long" : "N/A",
+"struggle" : "Downloading the Firefox add-on for Challenge 2+"
+},
+{
+"name": "Zach Pierce",
+"challenge" : "7.5",
+"long" : "3",
+"struggle" : "Using the database code that was provided I wasnt sure what to save it as or how to get it to display"
+}
+]
