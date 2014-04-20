@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>The Dynamic Classroom</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/OverallSiteStyle.css') }}" rel="stylesheet">
+
+
+	<!-- JS
+	==================================================-->
+
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="col-md-2 left">
+
+			<div class="navigation">	
+
+				<ul class="nav_list">
+					<li><a href="/"><div class="nav-text">Home</div></a></li>
+					<li><a href="hackathon"><div class="nav-text">Hackathon</div></a></li>
+					<li><a href="journal"><div class="nav-text">Journals</div></a></li>
+					<li><a href="results"><div class="nav-text">Results</div></a></li>
+					<li class='active'><a href="#"><div class="nav-text" id="selected_page">About Us</div></a></li>
+
+				</ul>
+			</div>
+		</div> <!-- /col-md-2 navigation -->
+
+		<div class="col-xs-6 col-md-8 content">
+			<!-- Tom Yeh-->
+			<div class="row">
+				<div class="col-lg-10">
+					<h3>Tom Yeh</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-md-2">
+					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
+				</div>
+				<div class="col-lg-8 col-md-8">
+					<p>
+						I am an assistant professor in the Department of Computer Science at the University of Colorado Boulder. I lead the Sikuli Lab where I educate a team of talented students to conduct cutting-edge research to make computers see better and interact with humans more naturally. One example is Sikuli Script, a GUI automation tool based on screenshots. Since its release as open-source software in 2010, it has been downloaded more than 200,000 times and used by a large community of users for a variety of purposes such as testing, IT automation, scraping, data transfer, and gaming.
+					</p>
+				</div>
+			</div>
+
+			<!-- Mike-->
+
+			<div class="row">
+				<div class="col-lg-10">
+					<h3>Mike Skirpane</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-md-2">
+					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/Hansoloprofile.jpg') }}">
+				</div>
+				<div class="col-lg-8 col-md-8">
+					<p>
+						I'm a PhD student at University Colorado at Boulder in the department of computer science.  My work is at the intersection of three domains: computer science, education, and law.  Currently I focus on instructional design, creating education technologies to support atmospheres of experiential learning and democratic education.  Within this area, I also pursue question in data science regarding the collection and analysis of learning data coming from classrooms and at-home learning.  I also have a relationship with the law school around patent and IP issues, specifically in how to support open-source initiatives and rights to data access and protection.
+					</p>
+				</div>
+			</div>
+
+			<!-- Jacob Wolniewicz -->
+			<div class="row">
+				<div class="col-lg-10">
+					<h3>Jacob Wolniewicz</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-md-2">
+					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/jacobwolniewicz.jpg') }}">
+				</div>
+				<div class="col-lg-8 col-md-8">
+					<p>
+						I am a graduate from CU Boulder's Computer Science BS program. Within the field of computer science I really enjoy learning about HCI topics, and come the fall of 2014 I will be going to work at Microsoft full time.
+					</p>
+				</div>
+			</div>
+
+
+		</div> <!-- container -->
+
+
+		<div class="col-md-2 right">
+		</div>
+	</div>
+
+</body>
+
+</html>

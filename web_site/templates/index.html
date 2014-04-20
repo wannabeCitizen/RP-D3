@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>The Dynamic Classroom</title>
+    <meta name="description" content="">
+    <meta name="author" content="Jacob and Paul">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/OverallSiteStyle.css') }}" rel="stylesheet">
+
+
+	<!-- JS
+	==================================================-->
+
+	<style>
+
+	</style>
+</head>
+<body>
+    <div class="row">
+    
+    </div>
+		<div class="row">
+			<div class="col-md-2 left">
+
+				<div class="navigation">	
+
+					<ul class="nav_list">
+						<li class='active'><a href="#"><div class="nav-text" id="selected_page">Home</div></a></li>
+						<li><a href="hackathon"><div class="nav-text">Hackathon</div></a></li>
+						<li><a href="journal"><div class="nav-text">Journals</div></a></li>
+						<li><a href="results"><div class="nav-text">Results</div></a></li>
+						<li><a href="about"><div class="nav-text">About Us</div></a></li>
+
+					</ul>
+				</div>
+			</div> <!-- /col-md-2 navigation -->
+
+			<div class="col-xs-6 col-md-8 content">
+				<div class="row">
+					<div class="col-lg-10">
+						<h1>The Dynamic Classroom</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-7 col-md-7">
+						<p>
+							This website is devoted to the documentation and description of an experimental instructional methodology for teaching computer science.  Our methodology stems from historical philosophies of education coming from thinkers like Rousseau and Dewey who championed experiential education.  We also borrow work from a Harvard Physicist, Eric Mazur, who came up with the 'flipped classroom' design which has been influential on our ideas.  We call our design the 'dynamic classroom'
+						</p>
+						<p>
+							On this website, you'll find the general structure of our methodology as we implemented it in the Spring 2014 at CU-Boulder for a class on User-Centered Design and Development.  Each component of the class is given its own section on this website that includes an in-depth description as well as examples from our class.  Let's start by describing the foundational concept for our class: the flipped classroom.
+						</p>
+					</div>
+					<div class="col-lg-3 col-md-3">
+						<img width="150%" class="img-rounded" src="{{ url_for('static', filename='img/graph1.png') }}">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-10">
+						<h1>The Flipped Classroom and The Dynamic Classroom</h1>
+						<p>In simplest terms, the flipped classroom exchanges the normal learning process that happens in the classroom and asks students to do this at home, then takes the work you'd do for homework and brings it to the classroom.  Current deployments of the traditional classroom often use video lectures for students to watch at home on their own time, then work on problems and have discussion in class.  
+
+						If this is a usual schedule under a traditional classroom model:
+						</p>
+						<center><img width="50%" class="img-rounded" src="{{ url_for('static', filename='img/tradClass.png') }}"></center>
+						<p>
+						Then this is the flipped classroom model:
+						</p>
+						<center><img width="50%" class="img-rounded" src="{{ url_for('static', filename='img/flippedClass.png') }}"></center>
+						<br>
+						<p>
+						Our methodology departs completely from the traditional mode of the class in that we do not have a standard 'lecture' component.  We have three major working parts in our design:
+						<ul>
+							<li>Hack-a-thons (in class)</li>
+							<li>Challenges (out of class)</li>
+							<li>Journal (reflection and formative assessment)</li>
+						</ul>
+						Each of these pieces will be explained and shown in detail in their respective sections of the site.  For now, it's useful to know that a <em>hack-a-thon</em> is a collaborative, peer-coding workshop that happens in class and gets students to work in small groups in order to design and implement a system based on skills we have worked on that week.  <em>Challenges</em> are the replacement for homework where students are asked to work through a set of challenges that start simple - introducing and setting up new tool, library, or programming language - and gradually get harder asking students to obtain certain results by working with the given tool.  Finally, we have the students respond to a set of journal questions that ask them to reflect on what they've learned and give us feedback on how we can change things.
+						</p>
+
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-lg-10">
+						<p>
+							
+						</p>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10">
+						<center><img width="50%" class="img-rounded" src="{{ url_for('static', filename='img/classroom.jpeg') }}"></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10">
+						<br><br>
+
+						I see a little silhouetto of a man,
+						Scaramouche, Scaramouche, will you do the Fandango?
+						Thunderbolt and lightning,
+						Very, very frightening me.
+						(Galileo) Galileo.
+						(Galileo) Galileo,
+						Galileo Figaro
+						Magnifico.
+
+						I'm just a poor boy and nobody loves me.
+						He's just a poor boy from a poor family,
+						Spare him his life from this monstrosity.
+
+						Easy come, easy go, will you let me go?
+						Bismillah! No, we will not let you go. (Let him go!)
+						Bismillah! We will not let you go. (Let him go!)
+						Bismillah! We will not let you go. (Let me go!)
+						Will not let you go. (Let me go!)
+						Never, never let you go
+						Never let me go, oh.
+						No, no, no, no, no, no, no.
+						Oh, mama mia, mama mia (Mama mia, let me go.)
+						Beelzebub has a devil put aside for me, for me, for me.
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-lg-10">
+						<h1>D3.js</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-10">
+						<p>
+							So you think you can stone me and spit in my eye?
+							So you think you can love me and leave me to die?
+							Oh, baby, can't do this to me, baby,
+							Just gotta get out, just gotta get right outta here.
+
+							(Oh, yeah, oh yeah)
+
+							Nothing really matters,
+							Anyone can see,
+							Nothing really matters,
+							Nothing really matters to me.
+
+							Anyway the wind blows. 
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-10">
+						<a href="http://d3js.org/"><center><img width="100%" class="img-rounded" src="{{ url_for('static', filename='img/d3homepage.png') }}"></center></a>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="col-md-2 right">
+			</div>
+		</div>
+
+</body>
+
+</html>
