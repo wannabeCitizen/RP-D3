@@ -21,7 +21,10 @@
 
 	<!-- JS
 	==================================================-->
-	<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+
+	<script src="http://d3js.org/d3.v3.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -37,14 +40,23 @@
 					<li class='active'><a href="#"><div class="nav-text" id="selected_page">Journals</div></a></li>
 					<li><a href="results"><div class="nav-text">Results</div></a></li>
 					<li><a href="about"><div class="nav-text">About Us</div></a></li>
-
+					
+					<script>
+					$( "li" ).hover(
+						function() {
+							$( this ).css("font-size", "25px");
+						}, function() {
+							$( this ).css("font-size", "20px");
+						}
+						);
+					</script>
 				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->
 		<div class="col-xs-6 col-md-8 content">	
 			<div class="row">
 				<div class="col-md-12">
-					<h2><a href="../view">Journals</a></h2>
+					<h2>Journals</h2>
 
 
 					<p>The way homework is assigned in our instructional model involves doing a series of challenges that step students through different aspects of the tool they are learning.  These challenges start simple - e.g., downloading and installing the packages - and end with a fully functional use of the tool.  In this way students are actively <em> engaging</em> with their skills by <em>doing</em> activities that integrate this new tool into their repertoire of abilities.  All work is submitted in the way of a <b>learning journal</b>, which is described further below.</p>

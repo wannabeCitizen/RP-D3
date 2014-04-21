@@ -37,6 +37,7 @@ img{
 
 #selected_page{
 	color:Black;
+	font-size: 25px;
 }
 .axis path,
 .axis line {
@@ -66,4 +67,10 @@ img{
 .no-margin{
 	margin-right: 0px;
 	margin-left: 0px;
+}
+
+.row-center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

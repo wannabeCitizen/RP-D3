@@ -20,6 +20,7 @@
 
 	<!-- JS
 	==================================================-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	<style>
 
@@ -38,14 +39,26 @@
 					<li><a href="results"><div class="nav-text">Results</div></a></li>
 					<li><a href="about"><div class="nav-text">About Us</div></a></li>
 
+
+					<script>
+					$( "li" ).hover(
+						function() {
+							$( this ).css("font-size", "25px");
+						}, function() {
+							$( this ).css("font-size", "20px");
+						}
+						);
+					</script>
 				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->
 
 		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 content">
 			<div class="row">
-				<div class="col-lg-10">
-					<h1>The Dynamic Classroom</h1>
+				<div class="col-lg-12">
+					<div class="row-center">
+						<img width="100%%" class="img-rounded" src="{{ url_for('static', filename='img/title.png') }}">
+					</div>
 				</div>
 			</div>
 
@@ -57,9 +70,6 @@
 					<p>
 						On this website, you'll find the general structure of our methodology as we implemented it in the Spring 2014 at CU-Boulder for a class on User-Centered Design and Development.  Each component of the class is given its own section on this website that includes an in-depth description as well as examples from our class.  Let's start by describing the foundational concept for our class: the flipped classroom.
 					</p>
-				</div>
-				<div class="col-sm-3 col-lg-3 col-md-3">
-					<img width="180%" class="img-rounded" src="{{ url_for('static', filename='img/title.png') }}">
 				</div>
 			</div>
 
