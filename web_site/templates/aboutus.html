@@ -21,6 +21,8 @@
 
 	<!-- JS
 	==================================================-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 
 <script type=text/javascript scr="{{ url_for('static', filename='js/jquery.transit.min.js')"></script>
 
@@ -39,6 +41,18 @@
 					<li><a href="journal"><div class="nav-text">Journals</div></a></li>
 					<li><a href="results"><div class="nav-text">Results</div></a></li>
 					<li class='active'><a href="#"><div class="nav-text" id="selected_page">About Us</div></a></li>
+
+
+					<script>
+					$( "li" ).hover(
+						function() {
+							$( this ).css("font-size", "25px");
+						}, function() {
+							$( this ).css("font-size", "20px");
+						}
+						);
+					</script>
+
 
 				</ul>
 			</div>
@@ -68,12 +82,12 @@
 
 			<div class="row">
 				<div class="col-lg-10">
-					<h3>Mike Skirpane</h3>
+					<h3>Mike Skirpan</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-2 col-md-2">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/Hansoloprofile.jpg') }}">
+					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/mike.jpg') }}">
 				</div>
 				<div class="col-lg-8 col-md-8">
 					<p>
@@ -103,24 +117,24 @@
 					<h3>Paul Kubala</h3>
 				</div>
 			</div>
-					<div class="col-lg-2 col-md-2">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/paul.jpg') }}">
-				</div>
-				<div class="col-lg-8 col-md-8">
-					<p>
-						I am a recent graduate from the Univserity of Colorado Boulder. I graduated with a B.S. in computer science with in emphasis in computational simulations and animation. I will be starting my own animation studio this summer as well as working as a front-end developer for Denver based <a href="http://www.distillerysolutions.com">Distillery Solutions</a>. Any sample of my other work and contact information can be viewed on my <a href="http://www.jpkubala.com">website.</a>  
-					</p>
-				</div>
-				</div>
-			
-			
-
-		</div> <!-- container -->
-
-
-		<div class="col-md-2 right">
+			<div class="col-lg-2 col-md-2">
+				<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/paul.jpg') }}">
+			</div>
+			<div class="col-lg-8 col-md-8">
+				<p>
+					I am a recent graduate from the Univserity of Colorado Boulder. I graduated with a B.S. in computer science with in emphasis in computational simulations and animation. I will be starting my own animation studio this summer as well as working as a front-end developer for Denver based <a href="http://www.distillerysolutions.com">Distillery Solutions</a>. Any sample of my other work and contact information can be viewed on my <a href="http://www.jpkubala.com">website.</a>  
+				</p>
+			</div>
 		</div>
+
+
+
+	</div> <!-- container -->
+
+
+	<div class="col-md-2 right">
 	</div>
+</div>
 
 </body>
 

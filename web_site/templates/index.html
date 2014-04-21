@@ -20,6 +20,7 @@
 
 	<!-- JS
 	==================================================-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	<style>
 
@@ -38,14 +39,26 @@
 					<li><a href="results"><div class="nav-text">Results</div></a></li>
 					<li><a href="about"><div class="nav-text">About Us</div></a></li>
 
+
+					<script>
+					$( "li" ).hover(
+						function() {
+							$( this ).css("font-size", "25px");
+						}, function() {
+							$( this ).css("font-size", "20px");
+						}
+						);
+					</script>
 				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->
 
 		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 content">
 			<div class="row">
-				<div class="col-lg-10">
-					<h1>The Dynamic Classroom</h1>
+				<div class="col-lg-12">
+					<div class="row-center">
+						<img width="100%%" class="img-rounded" src="{{ url_for('static', filename='img/title.png') }}">
+					</div>
 				</div>
 			</div>
 
@@ -58,25 +71,22 @@
 						On this website, you'll find the general structure of our methodology as we implemented it in the Spring 2014 at CU-Boulder for a class on User-Centered Design and Development.  Each component of the class is given its own section on this website that includes an in-depth description as well as examples from our class.  Let's start by describing the foundational concept for our class: the flipped classroom.
 					</p>
 				</div>
-				<div class="col-sm-3 col-lg-3 col-md-3">
-					<img width="180%" class="img-rounded" src="{{ url_for('static', filename='img/title.png') }}">
-				</div>
 			</div>
 
-				<div class="row">
-					<div class="col-sm-10 col-md-10 col-lg-10">
-						<h1>Our Methodology</h1>
-						<p>In simplest terms, the flipped classroom exchanges the normal learning process that happens in the classroom and asks students to do this at home, then takes the work you'd do for homework and brings it to the classroom.  Current deployments of the traditional classroom often use video lectures for students to watch at home on their own time, then work on problems and have discussion in class.  
+			<div class="row">
+				<div class="col-sm-10 col-md-10 col-lg-10">
+					<h1>Our Methodology</h1>
+					<p>In simplest terms, the flipped classroom exchanges the normal learning process that happens in the classroom and asks students to do this at home, then takes the work you'd do for homework and brings it to the classroom.  Current deployments of the traditional classroom often use video lectures for students to watch at home on their own time, then work on problems and have discussion in class.  
 
 						If this is a usual schedule under a traditional classroom model:
-						</p>
-						<center><img width="100%" class="img-rounded" src="{{ url_for('static', filename='img/tradClass.png') }}"></center>
-						<p>
+					</p>
+					<center><img width="100%" class="img-rounded" src="{{ url_for('static', filename='img/tradClass.png') }}"></center>
+					<p>
 						Then this is the flipped classroom model:
-						</p>
-						<center><img width="100%" class="img-rounded" src="{{ url_for('static', filename='img/flippedClass.png') }}"></center>
-						<br>
-						<p>
+					</p>
+					<center><img width="100%" class="img-rounded" src="{{ url_for('static', filename='img/flippedClass.png') }}"></center>
+					<br>
+					<p>
 						Our methodology departs completely from the traditional mode of the class in that we do not have a standard 'lecture' component.  We have three major working parts in our design:
 						<ul>
 							<li>Hack-a-thons (in class)</li>
@@ -89,27 +99,18 @@
 				</div>
 			</div>
 
-
 			<div class="row">
 				<div class="col-sm-10 col-md-10 col-lg-10">
-					<p>
-
-					</p>
-					<br><br>
+					<center><img width="50%" class="img-rounded" src="{{ url_for('static', filename='img/inClass.JPG') }}"></center>
+					<p>This is our class hard at work in the middle of a hack-a-thon!</p>
 				</div>
-
-				<div class="row">
-					<div class="col-sm-10 col-md-10 col-lg-10">
-						<center><img width="50%" class="img-rounded" src="{{ url_for('static', filename='img/inClass.JPG') }}"></center>
-						<p>This is our class hard at work in the middle of a hack-a-thon!</p>
-					</div>
-				</div>
+			</div>
 
 
-		<div class="col-sm-2 col-md-2 col-lg-2 right">
+			<div class="col-sm-2 col-md-2 col-lg-2 right">
+			</div>
 		</div>
-	</div>
 
-</body>
+	</body>
 
-</html>
+	</html>

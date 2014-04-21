@@ -37,6 +37,7 @@ img{
 
 #selected_page{
 	color:Black;
+	font-size: 25px;
 }
 .axis path,
 .axis line {
@@ -56,6 +57,9 @@ img{
 	color: Black;
 }
 
+.color1{
+background: #81A594;
+}
 .content {
 	border-left: 3px;
 	background-color: Beige;
@@ -67,6 +71,8 @@ img{
 	margin-right: 0px;
 	margin-left: 0px;
 }
-.color1{
-background: #81A594;
-}
+.row-center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
