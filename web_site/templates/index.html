@@ -20,6 +20,7 @@
 
 	<!-- JS
 	==================================================-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	<style>
 
@@ -38,6 +39,16 @@
 					<li><a href="results"><div class="nav-text">Results</div></a></li>
 					<li><a href="about"><div class="nav-text">About Us</div></a></li>
 
+
+					<script>
+					$( "li" ).hover(
+						function() {
+							$( this ).css("font-size", "25px");
+						}, function() {
+							$( this ).css("font-size", "20px");
+						}
+						);
+					</script>
 				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->

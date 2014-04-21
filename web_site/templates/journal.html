@@ -22,6 +22,7 @@
 	<!-- JS
 	==================================================-->
 	<script src="http://d3js.org/d3.v3.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -37,7 +38,16 @@
 					<li class='active'><a href="#"><div class="nav-text" id="selected_page">Journals</div></a></li>
 					<li><a href="results"><div class="nav-text">Results</div></a></li>
 					<li><a href="about"><div class="nav-text">About Us</div></a></li>
-
+					
+					<script>
+					$( "li" ).hover(
+						function() {
+							$( this ).css("font-size", "25px");
+						}, function() {
+							$( this ).css("font-size", "20px");
+						}
+						);
+					</script>
 				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->
