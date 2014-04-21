@@ -22,6 +22,8 @@
 	<!-- JS
 	==================================================-->
 
+<script type=text/javascript scr="{{ url_for('static', filename='js/jquery.transit.min.js')"></script>
+
 
 </head>
 <body>
@@ -42,14 +44,16 @@
 			</div>
 		</div> <!-- /col-md-2 navigation -->
 
+
 		<div class="col-xs-6 col-md-8 content">
 			<!-- Tom Yeh-->
-			<div class="row">
+			<h1>About Us</h1>
+<div class="row color1">
 				<div class="col-lg-10">
-					<h3>Tom Yeh</h3>
+					<h3 class="text-center">Tom Yeh</h3>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row color1">
 				<div class="col-lg-2 col-md-2">
 					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
 				</div>
@@ -79,12 +83,12 @@
 			</div>
 
 			<!-- Jacob Wolniewicz -->
-			<div class="row">
+			<div class="row color1">
 				<div class="col-lg-10">
 					<h3>Jacob Wolniewicz</h3>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row color1">
 				<div class="col-lg-2 col-md-2">
 					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/jacobwolniewicz.jpg') }}">
 				</div>
