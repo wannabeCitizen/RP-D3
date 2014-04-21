@@ -25,6 +25,7 @@
 
 </head>
 <body>
+
 	<div class="row">
 		<div class="col-md-2 left">
 
@@ -40,7 +41,6 @@
 				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->
-
 		<div class="col-xs-6 col-md-8 content">	
 			<div class="row">
 				<div class="col-md-12">
@@ -155,7 +155,7 @@
 					.x(function(d) { return x(d.date); })
 					.y(function(d) { return y(d.temperature); });
 
-					var svg = d3.select("body").append("svg")
+					var svg = d3.select(".content").append("svg")
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
 					.append("g")
@@ -218,10 +218,10 @@
 					});
 </script>
 </div>
+
+
+</div> <!-- container --> 
 </div>
-
-
-</div> <!-- container -->
 
 
 <div class="col-md-2 right">
