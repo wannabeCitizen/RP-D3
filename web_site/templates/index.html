@@ -26,45 +26,42 @@
 	</style>
 </head>
 <body>
-    <div class="row">
-    
-    </div>
-		<div class="row">
-			<div class="col-sm-2 col-md-2 col-lg-2 left">
+	<div class="row no-margin">
+		<div class="col-sm-2 col-md-2 col-lg-2 left">
 
-				<div class="navigation">	
+			<div class="navigation">	
 
-					<ul class="nav_list">
-						<li class='active'><a href="#"><div class="nav-text" id="selected_page">Home</div></a></li>
-						<li><a href="hackathon"><div class="nav-text">Hackathon</div></a></li>
-						<li><a href="journal"><div class="nav-text">Journals</div></a></li>
-						<li><a href="results"><div class="nav-text">Results</div></a></li>
-						<li><a href="about"><div class="nav-text">About Us</div></a></li>
+				<ul class="nav_list">
+					<li class='active'><a href="#"><div class="nav-text" id="selected_page">Home</div></a></li>
+					<li><a href="hackathon"><div class="nav-text">Hackathon</div></a></li>
+					<li><a href="journal"><div class="nav-text">Journals</div></a></li>
+					<li><a href="results"><div class="nav-text">Results</div></a></li>
+					<li><a href="about"><div class="nav-text">About Us</div></a></li>
 
-					</ul>
+				</ul>
+			</div>
+		</div> <!-- /col-md-2 navigation -->
+
+		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 content">
+			<div class="row">
+				<div class="col-lg-10">
+					<h1>The Dynamic Classroom</h1>
 				</div>
-			</div> <!-- /col-md-2 navigation -->
+			</div>
 
-			<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 content">
-				<div class="row">
-					<div class="col-lg-10">
-						<h1>The Dynamic Classroom</h1>
-					</div>
+			<div class="row">
+				<div class="col-sm-7 col-lg-7 col-md-7">
+					<p>
+						This website is devoted to the documentation and description of an experimental instructional methodology for teaching computer science.  Our methodology stems from historical philosophies of education coming from thinkers like Rousseau and Dewey who championed experiential education.  We also borrow work from a Harvard Physicist, Eric Mazur, who came up with the 'flipped classroom' design which has been influential on our ideas.  We call our design the 'dynamic classroom'
+					</p>
+					<p>
+						On this website, you'll find the general structure of our methodology as we implemented it in the Spring 2014 at CU-Boulder for a class on User-Centered Design and Development.  Each component of the class is given its own section on this website that includes an in-depth description as well as examples from our class.  Let's start by describing the foundational concept for our class: the flipped classroom.
+					</p>
 				</div>
-
-				<div class="row">
-					<div class="col-sm-7 col-lg-7 col-md-7">
-						<p>
-							This website is devoted to the documentation and description of an experimental instructional methodology for teaching computer science.  Our methodology stems from historical philosophies of education coming from thinkers like Rousseau and Dewey who championed experiential education.  We also borrow work from a Harvard Physicist, Eric Mazur, who came up with the 'flipped classroom' design which has been influential on our ideas.  We call our design the 'dynamic classroom'
-						</p>
-						<p>
-							On this website, you'll find the general structure of our methodology as we implemented it in the Spring 2014 at CU-Boulder for a class on User-Centered Design and Development.  Each component of the class is given its own section on this website that includes an in-depth description as well as examples from our class.  Let's start by describing the foundational concept for our class: the flipped classroom.
-						</p>
-					</div>
-					<div class="col-sm-3 col-lg-3 col-md-3">
-						<img width="150%" class="img-rounded" src="{{ url_for('static', filename='img/graph1.png') }}">
-					</div>
+				<div class="col-sm-3 col-lg-3 col-md-3">
+					<img width="150%" class="img-rounded" src="{{ url_for('static', filename='img/graph1.png') }}">
 				</div>
+			</div>
 
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10">
@@ -87,20 +84,20 @@
 							<li>Journal (reflection and formative assessment)</li>
 						</ul>
 						Each of these pieces will be explained and shown in detail in their respective sections of the site.  For now, it's useful to know that a <em>hack-a-thon</em> is a collaborative, peer-coding workshop that happens in class and gets students to work in small groups in order to design and implement a system based on skills we have worked on that week.  <em>Challenges</em> are the replacement for homework where students are asked to work through a set of challenges that start simple - introducing and setting up new tool, library, or programming language - and gradually get harder asking students to obtain certain results by working with the given tool.  Finally, we have the students respond to a set of journal questions that ask them to reflect on what they've learned and give us feedback on how we can change things.
-						</p>
+					</p>
 
-					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-10 col-md-10 col-lg-10">
+					<p>
+
+					</p>
+					<br><br>
 				</div>
 
-
-				<div class="row">
-					<div class="col-sm-10 col-md-10 col-lg-10">
-						<p>
-							
-						</p>
-						<br><br>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10">
 						<center><img width="50%" class="img-rounded" src="{{ url_for('static', filename='img/inClass.JPG') }}"></center>
@@ -108,11 +105,10 @@
 					</div>
 				</div>
 
-			
 
 		<div class="col-sm-2 col-md-2 col-lg-2 right">
-			</div>
 		</div>
+	</div>
 
 </body>
 

@@ -51,9 +51,9 @@ img{
 }
 
 .line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+  	fill: none;
+  	stroke: steelblue;
+  	stroke-width: 1.5px;
 	color: Black;
 }
 
@@ -62,4 +62,9 @@ img{
 	background-color: Beige;
 	border-left-style: solid;
 	border-right-style: solid;
+}
+
+.no-margin{
+	margin-right: 0px;
+	margin-left: 0px;
 }
