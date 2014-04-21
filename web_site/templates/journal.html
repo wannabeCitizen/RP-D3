@@ -43,24 +43,18 @@
 
 		<div class="col-xs-6 col-md-8 content">	
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<h2><a href="../view">Journals</a></h2>
-					<div class="row">
 
 
-						<p>The way homework is assigned in our instructional model involves doing a series of challenges that step students through different aspects of the tool they are learning.  These challenges start simple - e.g., downloading and installing the packages - and end with a fully functional use of the tool.  In this way students are actively <em> engaging</em> with their skills by <em>doing</em> activities that integrate this new tool into their repertoire of abilities.  All work is submitted in the way of a <b>learning journal</b>, which is described further below.</p>
+					<p>The way homework is assigned in our instructional model involves doing a series of challenges that step students through different aspects of the tool they are learning.  These challenges start simple - e.g., downloading and installing the packages - and end with a fully functional use of the tool.  In this way students are actively <em> engaging</em> with their skills by <em>doing</em> activities that integrate this new tool into their repertoire of abilities.  All work is submitted in the way of a <b>learning journal</b>, which is described further below.</p>
 
 
-						<p>Each assignment also has a reflective compontent that asks students to give feedback about the content and their experience with our module.  We also ask questions about peer learning and problem solving to get a sense of how people are learning together and what extraneous resources they used to help them complete the assignment.  This feedback is collected in the learning journal by posing a series of questions at the end of each module we ask them to respond to prior to submission.</p>
+					<p>Each assignment also has a reflective compontent that asks students to give feedback about the content and their experience with our module.  We also ask questions about peer learning and problem solving to get a sense of how people are learning together and what extraneous resources they used to help them complete the assignment.  This feedback is collected in the learning journal by posing a series of questions at the end of each module we ask them to respond to prior to submission.</p>
 
 
 
-						<p>Our current design has the assignment deployed on our class website which displays a document walking students through the challenges they are to complete.  Specific places where a submission is required are highlighted, which normally involves taking a screenshot or sharing a code snippet to prove the student has progressed to a certain point.  These submissions as well as responses to reflective questions are gathered through the <b>learning journal</b> which is a Google Presentation Document.  Each week we put up a template document that has slide for each submission as well as a slide for every journal question.</p>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<img src="{{ url_for('static', filename='img/graph2.png') }}" alt text="Hackathon 1" width="300" height="225" rel="tooltip" data-placement="bottom" title="Hackathon 1">
+					<p>Our current design has the assignment deployed on our class website which displays a document walking students through the challenges they are to complete.  Specific places where a submission is required are highlighted, which normally involves taking a screenshot or sharing a code snippet to prove the student has progressed to a certain point.  These submissions as well as responses to reflective questions are gathered through the <b>learning journal</b> which is a Google Presentation Document.  Each week we put up a template document that has slide for each submission as well as a slide for every journal question.</p>
 				</div>
 			</div>
 
@@ -128,99 +122,102 @@
 					</p>
 				</div>
 			</div>
+
+
 			<div class="row">
-				<script>
+				<div class="col-md-12">
+					<script>
 
-				var margin = {top: 20, right: 80, bottom: 30, left: 50},
-				width = 750 - margin.left - margin.right,
-				height = 400 - margin.top - margin.bottom;
+					var margin = {top: 20, right: 80, bottom: 30, left: 50},
+					width = 750 - margin.left - margin.right,
+					height = 400 - margin.top - margin.bottom;
 
-				var parseDate = d3.time.format("%Y%m%d").parse;
+					var parseDate = d3.time.format("%Y%m%d").parse;
 
-				var x = d3.time.scale()
-				.range([0, width]);
+					var x = d3.time.scale()
+					.range([0, width]);
 
-				var y = d3.scale.linear()
-				.range([height, 0]);
+					var y = d3.scale.linear()
+					.range([height, 0]);
 
-				var color = d3.scale.category10();
+					var color = d3.scale.category10();
 
-				var xAxis = d3.svg.axis()
-				.scale(x)
-				.orient("bottom");
+					var xAxis = d3.svg.axis()
+					.scale(x)
+					.orient("bottom");
 
-				var yAxis = d3.svg.axis()
-				.scale(y)
-				.orient("left");
+					var yAxis = d3.svg.axis()
+					.scale(y)
+					.orient("left");
 
-				var line = d3.svg.line()
-				.interpolate("basis")
-				.x(function(d) { return x(d.date); })
-				.y(function(d) { return y(d.temperature); });
+					var line = d3.svg.line()
+					.interpolate("basis")
+					.x(function(d) { return x(d.date); })
+					.y(function(d) { return y(d.temperature); });
 
-				var svg = d3.select("body").append("svg")
-				.attr("width", width + margin.left + margin.right)
-				.attr("height", height + margin.top + margin.bottom)
-				.append("g")
-				.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+					var svg = d3.select("body").append("svg")
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-				d3.tsv("{{ url_for('static', filename='data/data.tsv') }}", function(error, data) {
-					color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+					d3.tsv("{{ url_for('static', filename='data/data.tsv') }}", function(error, data) {
+						color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
-					data.forEach(function(d) {
-						d.date = parseDate(d.date);
+						data.forEach(function(d) {
+							d.date = parseDate(d.date);
+						});
+
+						var students = color.domain().map(function(name) {
+							return {
+								name: name,
+								values: data.map(function(d) {
+									return {date: d.date, temperature: +d[name]};
+								})
+							};
+						});
+
+						x.domain(d3.extent(data, function(d) { return d.date; }));
+
+						y.domain([
+							d3.min(students, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+							d3.max(students, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+							]);
+
+						svg.append("g")
+						.attr("class", "x axis")
+						.attr("transform", "translate(0," + height + ")")
+						.call(xAxis);
+
+						svg.append("g")
+						.attr("class", "y axis")
+						.call(yAxis)
+						.append("text")
+						.attr("transform", "rotate(-90)")
+						.attr("y", 6)
+						.attr("dy", ".71em")
+						.style("text-anchor", "end")
+						.text("# of Edits");
+
+						var student = svg.selectAll(".student")
+						.data(students)
+						.enter().append("g")
+						.attr("class", "student");
+
+						student.append("path")
+						.attr("class", "line")
+						.attr("d", function(d) { return line(d.values); })
+						.style("stroke", function(d) { return color(d.name); });
+
+						student.append("text")
+						.datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+						.attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+						.attr("x", 3)
+						.attr("dy", ".35em")
+						.text(function(d) { return d.name; });
 					});
-
-					var students = color.domain().map(function(name) {
-						return {
-							name: name,
-							values: data.map(function(d) {
-								return {date: d.date, temperature: +d[name]};
-							})
-						};
-					});
-
-					x.domain(d3.extent(data, function(d) { return d.date; }));
-
-					y.domain([
-						d3.min(students, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
-						d3.max(students, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
-						]);
-
-					svg.append("g")
-					.attr("class", "x axis")
-					.attr("transform", "translate(0," + height + ")")
-					.call(xAxis);
-
-					svg.append("g")
-					.attr("class", "y axis")
-					.call(yAxis)
-					.append("text")
-					.attr("transform", "rotate(-90)")
-					.attr("y", 6)
-					.attr("dy", ".71em")
-					.style("text-anchor", "end")
-					.text("# of Edits");
-
-					var student = svg.selectAll(".student")
-					.data(students)
-					.enter().append("g")
-					.attr("class", "student");
-
-					student.append("path")
-					.attr("class", "line")
-					.attr("d", function(d) { return line(d.values); })
-					.style("stroke", function(d) { return color(d.name); });
-
-					student.append("text")
-					.datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-					.attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
-					.attr("x", 3)
-					.attr("dy", ".35em")
-					.text(function(d) { return d.name; });
-				});
-
 </script>
+</div>
 </div>
 
 
