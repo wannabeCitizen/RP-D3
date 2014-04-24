@@ -16,14 +16,9 @@ def hackathon():
 def journal():
     return render_template('journal.html')
 
-@app.route('/results', methods=['POST', 'GET'])
-def results():
-    return render_template('results.html')
-
 @app.route('/about', methods=['POST', 'GET'])
 def about():
-    return render_template('aboutus.html')
-
-
+	return render_template('aboutus.html')
+	
 if __name__ == '__main__':
     app.run(debug=True)
