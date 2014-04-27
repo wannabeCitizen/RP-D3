@@ -58,7 +58,7 @@
 
 		<div class="col-xs-6 col-md-8 content">
 			<!-- Tom Yeh-->
-			<h1 id="box" class="text-center">About Us</h1>
+			<h1 class="text-center">About Us</h1>
 		<span id="tom"><div class="row color1">
 				<div class="col-lg-10">
 					<h3 class="text-center" id="tom_title">Tom Yeh</h3>
@@ -69,7 +69,7 @@
 					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
 				</div>
 				<div class="col-lg-8 col-md-8">
-					<p>
+					<p id="tom_descrip">
 						I am an assistant professor in the Department of Computer Science at the University of Colorado Boulder. I lead the Sikuli Lab where I educate a team of talented students to conduct cutting-edge research to make computers see better and interact with humans more naturally. One example is Sikuli Script, a GUI automation tool based on screenshots. Since its release as open-source software in 2010, it has been downloaded more than 200,000 times and used by a large community of users for a variety of purposes such as testing, IT automation, scraping, data transfer, and gaming.
 					</p>
 				</div>
@@ -138,19 +138,46 @@
 
 </body>
 
-	<script>
+
+
+
+
+<script>
+
+
+/*
+var a = true;
 	$("p").hide();
-	if(window.screen.width > 900)
 	{
-	$('#tom').hover(function(){
-    	$("#tom_title").transition({ x: -100 });
-    	$("p").show();
-	});
+			$('#tom').hover(function(){
+    			$("#tom_title").transition({ x: -100 });
+    			$("p").show();
+    			if(a){
+    			$("p").one("hover",function(){
+    				$(this).append("<h2>wasup</h2>");
+    				$(this).append(a);
+    			});}
+    			a = false;
+			});
 	}
-	</script>
-	<script>
-	$("p")
-	</script>
+	*/
+
+	$('#tom_descrip').hide();
+	var a = true;
+	{
+		$('#tom').one("mouseenter",function(){
+			if(a){
+				$('#tom_descrip').append("<h2>wasup</h2>");
+				a = false;
+			}
+    			$("#tom_title").transition({ x: -100 });
+    			$('#tom_descrip').show();
+			});
+	}
+
+
+</script>
+
 
 
 </html>
