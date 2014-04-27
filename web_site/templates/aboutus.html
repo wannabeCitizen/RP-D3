@@ -58,10 +58,10 @@
 
 		<div class="col-xs-6 col-md-8 content">
 			<!-- Tom Yeh-->
-			<h1 id="box">About Us</h1>
-<div class="row color1">
+			<h1 id="box" class="text-center">About Us</h1>
+		<span id="tom"><div class="row color1">
 				<div class="col-lg-10">
-					<h3 class="text-center">Tom Yeh</h3>
+					<h3 class="text-center" id="tom_title">Tom Yeh</h3>
 				</div>
 			</div>
 			<div class="row color1">
@@ -74,6 +74,7 @@
 					</p>
 				</div>
 			</div>
+		</span>
 
 			<!-- Mike-->
 
@@ -138,9 +139,14 @@
 </body>
 
 	<script>
-	$("h3").hover(function(){
-    	$(this).transition({ x: 200 });
+	$("p").hide();
+	if(window.screen.width > 900)
+	{
+	$('#tom').hover(function(){
+    	$("#tom_title").transition({ x: -100 });
+    	$("p").show();
 	});
+	}
 	</script>
 	<script>
 	$("p")

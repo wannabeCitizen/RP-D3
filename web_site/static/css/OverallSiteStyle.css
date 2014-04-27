@@ -5,18 +5,30 @@ body{
 h3{
 	font-size: 36px;
 	color: #00628B;
+	font-family: Nauman;
 
+}
+
+@font-face
+{
+font-family: Nauman;
+src: url(../fonts/Nauman_Regular_Regular.otf);
+}
+
+h1{
+	font-size: 72px;
+	font-family: Nauman;
 }
 
 h2{
 	margin-bottom: 15px;
 	font-size: 40px;
-	font-family: sans-serif;
+	font-family: Nauman;
 }
 
 p{
 	font-size: 15px;
-	font-family: Georgia, serif;
+	font-family: Nauman;
 }
 
 img{
