@@ -21,6 +21,8 @@
 	<!-- JS
 	==================================================-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+
 
 	<style>
 
@@ -111,5 +113,10 @@
 		</div>
 
 	</body>
+	<script>
+	$("h1").hover(function(){
+    	$(this).transition({ x: 200 });
+	});
+	</script>
 
 	</html>
