@@ -1,5 +1,5 @@
 body{
-	background-color: #E6E6DC;
+	background-color: #e8e8e8;
 }
 
 h3{
@@ -74,8 +74,9 @@ img{
 background: #81A594;
 }
 .content {
-	border-left: 3px;
-	background-color: Beige;
+	border-left: 1px;
+	border-right: 1px;
+	background-color: white;
 	border-left-style: solid;
 	border-right-style: solid;
 }

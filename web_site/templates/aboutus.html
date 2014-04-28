@@ -51,7 +51,7 @@
 						}
 						);
 					</script>
-								</ul>
+				</ul>
 			</div>
 		</div> <!-- /col-md-2 navigation -->
 
@@ -59,7 +59,10 @@
 		<div class="col-xs-6 col-md-8 content">
 			<!-- Tom Yeh-->
 			<h1 class="text-center">About Us</h1>
+
 			<div class="row color1">
+
+
 				<div class="col-lg-10">
 					<h3 class="text-center" id="tom_title">Tom Yeh</h3>
 				</div>
@@ -74,61 +77,63 @@
 				</div>
 			</div>
 
-			<!-- Mike-->
-			<div class="row">
-				<div class="col-lg-10">
-					<h3 class="text-center">Mike Skirpan</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-2 col-md-2">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/mike.jpg') }}">
-				</div>
-				<div class="col-lg-8 col-md-8">
-					<p>
-						I'm a PhD student at University Colorado at Boulder in the department of computer science.  My work is at the intersection of three domains: computer science, education, and law.  Currently I focus on instructional design, creating education technologies to support atmospheres of experiential learning and democratic education.  Within this area, I also pursue question in data science regarding the collection and analysis of learning data coming from classrooms and at-home learning.  I also have a relationship with the law school around patent and IP issues, specifically in how to support open-source initiatives and rights to data access and protection.
-					</p>
-				</div>
-			</div>
 
-			<!-- Jacob Wolniewicz -->
-			<div class="row color1">
-				<div class="col-lg-10">
-					<h3 class="text-center">Jacob Wolniewicz</h3>
-				</div>
+		<!-- Mike-->
+
+		<div class="row">
+			<div class="col-lg-10">
+				<h3 class="text-center">Mike Skirpan</h3>
 			</div>
-			<div class="row color1">
-				<div class="col-lg-2 col-md-2">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/jacobwolniewicz.jpg') }}">
-				</div>
-				<div class="col-lg-8 col-md-8">
-					<p>
-						I am a graduate from CU Boulder's Computer Science BS program. Within the field of computer science I really enjoy learning about HCI topics, and come the fall of 2014 I will be going to work at Microsoft full time.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-10">
-					<h3 class="text-center">Paul Kubala</h3>
-				</div>
-			</div>
+		</div>
+		<div class="row">
 			<div class="col-lg-2 col-md-2">
-				<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/paul.jpg') }}">
+				<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/mike.jpg') }}">
 			</div>
-			<div class="col-lg-8 col-md-8">
+			<div class="col-lg-10 col-md-10">
 				<p>
-					I am a recent graduate from the Univserity of Colorado Boulder. I graduated with a B.S. in computer science with in emphasis in computational simulations and animation. I will be starting my own animation studio this summer as well as working as a front-end developer for Denver based <a href="http://www.distillerysolutions.com">Distillery Solutions</a>. Any sample of my other work and contact information can be viewed on my <a href="http://www.jpkubala.com">website.</a>  
+					I'm a PhD student at University Colorado at Boulder in the department of computer science.  My work is at the intersection of three domains: computer science, education, and law.  Currently I focus on instructional design, creating education technologies to support atmospheres of experiential learning and democratic education.  Within this area, I also pursue question in data science regarding the collection and analysis of learning data coming from classrooms and at-home learning.  I also have a relationship with the law school around patent and IP issues, specifically in how to support open-source initiatives and rights to data access and protection.
 				</p>
 			</div>
 		</div>
 
-
-
-	</div> <!-- container -->
-
-
-	<div class="col-md-2 right">
+		<!-- Jacob Wolniewicz -->
+		<div class="row color1">
+			<div class="col-lg-10">
+				<h3 class="text-center">Jacob Wolniewicz</h3>
+			</div>
+		</div>
+		<div class="row color1">
+			<div class="col-lg-2 col-md-2">
+				<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/jacobwolniewicz.jpg') }}">
+			</div>
+			<div class="col-lg-10 col-md-10">
+				<p>
+					I am a graduate from CU Boulder's Computer Science BS program. Within the field of computer science I really enjoy learning about HCI topics, and come the fall of 2014 I will be going to work at Microsoft full time.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10">
+				<h3 class="text-center">Paul Kubala</h3>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-2">
+			<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/paul.jpg') }}">
+		</div>
+		<div class="col-lg-10 col-md-10">
+			<p>
+				I am a recent graduate from the Univserity of Colorado Boulder. I graduated with a B.S. in computer science with in emphasis in computational simulations and animation. I will be starting my own animation studio this summer as well as working as a front-end developer for Denver based <a href="http://www.distillerysolutions.com">Distillery Solutions</a>. Any sample of my other work and contact information can be viewed on my <a href="http://www.jpkubala.com">website.</a>  
+			</p>
+		</div>
 	</div>
+
+
+
+</div> <!-- container -->
+
+
+<div class="col-md-2 right">
+</div>
 </div>
 
 
@@ -140,25 +145,6 @@
 
 
 <script>
-/*
-	$('#tom_descrip').hide();
-	var a = true;
-	{
-		$('#tom').one("mouseenter",function(){
-			$('#change_class_tom').addClass("col-lg-2 col-md-2");
-			$('#tom_descrip').addClass("col-lg-8 col-md-8");
-			if(a){
-				$('#tom_descrip').append("<p>I am an assistant professor in the Department of Computer Science at the University of Colorado Boulder. I lead the Sikuli Lab where I educate a team of talented students to conduct cutting-edge research to make computers see better and interact with humans more naturally. One example is Sikuli Script, a GUI automation tool based on screenshots. Since its release as open-source software in 2010, it has been downloaded more than 200,000 times and used by a large community of users for a variety of purposes such as testing, IT automation, scraping, data transfer, and gaming.</p>");
-				a = false;
-			}
-    			$("#tom_title").transition({ x: -100 });
-    			$('#tom_descrip').show();
-    			$('#tom_pic').transition({ scale: 1.5 });
-
-			});
-	}
-
-*/
 </script>
 
 
