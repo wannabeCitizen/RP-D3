@@ -16,17 +16,26 @@
 	================================================== -->
 	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename='css/OverallSiteStyle.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
 
 
 	<!-- JS
 	==================================================-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.textillate.js"></script>
+	<script type="text/javascript" src="jquery.letting.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 
+<!--Extra Styling
+===================================-->
 	<style>
-
-	</style>
+	</style>	
 </head>
+
+<!--Body Code
+====================-->
+
 <body>
 	<div class="row no-margin">
 		<div class="col-sm-2 col-md-2 col-lg-2 left">
@@ -57,13 +66,17 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="row-center">
-						<img width="100%%" class="img-rounded" src="{{ url_for('static', filename='img/title.png') }}">
+						<img width="100%" class="img-rounded" src="{{ url_for('static', filename='img/title.png') }}">
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-sm-10 col-lg-10 col-md-10">
+					<div class="demo" data-in-effect="rollIn">  
+    					<p>Each of this letter will animate.</p>  
+					</div>  
+
 					<p>
 						This website is devoted to the documentation and description of an experimental instructional methodology for teaching computer science.  Our methodology stems from historical philosophies of education coming from thinkers like Rousseau and Dewey who championed experiential education.  We also borrow work from a Harvard Physicist, Eric Mazur, who came up with the 'flipped classroom' design which has been influential on our ideas.  We call our design the 'dynamic classroom'
 					</p>
@@ -112,12 +125,12 @@
 			<div class="col-sm-2 col-md-2 col-lg-2 right">
 			</div>
 		</div>
-
 	</body>
+
 	<script>
-	$("h1").hover(function(){
-    	$(this).transition({ x: 200 });
-	});
+	$(function () {  
+    	$('.demo').textillate();  
+	});  
 	</script>
 
 	</html>

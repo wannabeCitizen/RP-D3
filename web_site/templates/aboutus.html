@@ -24,8 +24,8 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
-	<script type=text/javascript scr="{{ url_for('static', filename='js/jquery.transit.min.js') }}"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+
 
 </head>
 <body>
@@ -55,28 +55,26 @@
 			</div>
 		</div> <!-- /col-md-2 navigation -->
 
-
+<div class="container">
 		<div class="col-xs-6 col-md-8 content">
 			<!-- Tom Yeh-->
 			<h1 class="text-center">About Us</h1>
-		<span id="tom"><div class="row color1">
+			<div class="row color1">
 				<div class="col-lg-10">
 					<h3 class="text-center" id="tom_title">Tom Yeh</h3>
 				</div>
 			</div>
 			<div class="row color1">
-				<div class="col-lg-6 col-md-6" id="change_class_tom">
-					<img width="100%" class="img-circle" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
+				<div class="col-lg-2 col-md-2 text-center" id="change_class_tom">
+					<img width="100%" id="tom_pic" class="img-circle center-block" src="{{ url_for('static', filename='img/tomyeh.jpg') }}">
 				</div>
 
-				<div id="tom_descrip">
-
+				<div class="col-lg-8 col-md-8">
+					<p>I am an assistant professor in the Department of Computer Science at the University of Colorado Boulder. I lead the Sikuli Lab where I educate a team of talented students to conduct cutting-edge research to make computers see better and interact with humans more naturally. One example is Sikuli Script, a GUI automation tool based on screenshots. Since its release as open-source software in 2010, it has been downloaded more than 200,000 times and used by a large community of users for a variety of purposes such as testing, IT automation, scraping, data transfer, and gaming.</p>
 				</div>
 			</div>
-		</span>
 
 			<!-- Mike-->
-
 			<div class="row">
 				<div class="col-lg-10">
 					<h3 class="text-center">Mike Skirpan</h3>
@@ -142,12 +140,11 @@
 
 
 <script>
-//test
+/*
 	$('#tom_descrip').hide();
 	var a = true;
 	{
 		$('#tom').one("mouseenter",function(){
-			$('#change_class_tom').removeClass("col-lg-6 col-md-6");
 			$('#change_class_tom').addClass("col-lg-2 col-md-2");
 			$('#tom_descrip').addClass("col-lg-8 col-md-8");
 			if(a){
@@ -156,11 +153,12 @@
 			}
     			$("#tom_title").transition({ x: -100 });
     			$('#tom_descrip').show();
+    			$('#tom_pic').transition({ scale: 1.5 });
 
 			});
 	}
 
-
+*/
 </script>
 
 
