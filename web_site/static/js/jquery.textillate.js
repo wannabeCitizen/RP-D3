@@ -136,7 +136,7 @@
         , options = $.extend({}, base.options, getData($elem))
         , $chars;
 
-      $elem.addClass('current');
+      //$elem.addClass('current');
 
       base.triggerEvent('inAnimationBegin');
 
