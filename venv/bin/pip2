@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/Users/paulkubala/Desktop/RP-D3/venv/bin/python
+=======
+#!/home/anna/Desktop/D3/RP-D3/Web Site/venv/bin/python
+>>>>>>> 68da2ba99e7ec79faf9f3a5660ca91400ec848c2
 
 # -*- coding: utf-8 -*-
 import re

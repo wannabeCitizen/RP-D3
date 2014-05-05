@@ -39,7 +39,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="/Users/paulkubala/Desktop/RP-D3/venv"
+=======
+VIRTUAL_ENV="/home/anna/Desktop/RP-D3/web_site/venv"
+>>>>>>> 68da2ba99e7ec79faf9f3a5660ca91400ec848c2
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
